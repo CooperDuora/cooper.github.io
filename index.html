@@ -1,46 +1,44 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Duora Amusement | Indoor Playground Solutions</title>
-    <meta name="description" content="Duora Amusement designs and supplies indoor playground solutions with themed attractions, soft play, and custom layouts." />
+    <title>广州哆啦游乐设备有限公司｜室内儿童乐园整体解决方案</title>
+    <meta name="description" content="广州哆啦游乐设备有限公司提供室内儿童乐园整体解决方案：方案设计、主题定制、生产供货与交付支持。" />
     <link rel="canonical" href="https://www.duoraindoorplayground.com/" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Duora Amusement" />
-    <meta property="og:description" content="Indoor playground solutions: design, customization, and supply." />
+    <meta property="og:title" content="广州哆啦游乐设备有限公司" />
+    <meta property="og:description" content="室内儿童乐园整体解决方案：设计、定制、供货。" />
     <meta property="og:url" content="https://www.duoraindoorplayground.com/" />
-    <meta property="og:site_name" content="Duora Amusement" />
+    <meta property="og:site_name" content="广州哆啦游乐设备有限公司" />
     <meta property="og:image" content="https://www.duoraindoorplayground.com/demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Duora Amusement" />
-    <meta name="twitter:description" content="Indoor playground solutions: design, customization, and supply." />
+    <meta name="twitter:title" content="广州哆啦游乐设备有限公司" />
+    <meta name="twitter:description" content="室内儿童乐园整体解决方案：设计、定制、供货。" />
     <meta name="twitter:image" content="https://www.duoraindoorplayground.com/demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg" />
 
     <style>
       :root {
-        --bg: #f7fbff;
-        --panel: rgba(255,255,255,.86);
-        --line: rgba(15, 23, 42, .10);
-        --text: rgba(15, 23, 42, .92);
-        --muted: rgba(15, 23, 42, .64);
-        --brand: #2563eb;
+        --bg: #070a12;
+        --panel: rgba(255,255,255,.06);
+        --line: rgba(255,255,255,.10);
+        --text: rgba(255,255,255,.92);
+        --muted: rgba(255,255,255,.72);
+        --brand: #7c3aed;
         --brand2: #22c55e;
-        --brand3: #f97316;
-        --shadow: 0 18px 50px rgba(2, 6, 23, .12);
+        --shadow: 0 22px 60px rgba(0,0,0,.45);
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
       body {
         margin: 0;
         font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        background:
-          radial-gradient(900px 520px at 12% 8%, rgba(37, 99, 235, .16), transparent 55%),
-          radial-gradient(900px 520px at 85% 18%, rgba(34, 197, 94, .14), transparent 55%),
-          radial-gradient(1000px 640px at 55% 92%, rgba(249, 115, 22, .14), transparent 60%),
-          var(--bg);
+        background: radial-gradient(1200px 700px at 20% 0%, rgba(124,58,237,.20), transparent 55%),
+                    radial-gradient(1200px 700px at 80% 30%, rgba(34,197,94,.16), transparent 55%),
+                    radial-gradient(900px 700px at 60% 100%, rgba(59,130,246,.14), transparent 60%),
+                    var(--bg);
         color: var(--text);
       }
       a { color: inherit; }
@@ -50,8 +48,8 @@
         position: sticky;
         top: 0;
         z-index: 50;
-        background: rgba(247, 251, 255, .72);
-        border-bottom: 1px solid rgba(15, 23, 42, .10);
+        background: rgba(7,10,18,.55);
+        border-bottom: 1px solid rgba(255,255,255,.08);
         backdrop-filter: blur(14px);
       }
       .nav-inner {
@@ -68,14 +66,12 @@
         font-weight: 700;
         letter-spacing: .2px;
       }
-      .logo-img {
-        width: 36px;
-        height: 36px;
-        border-radius: 12px;
-        border: 1px solid rgba(15, 23, 42, .10);
-        background: #ffffff;
-        box-shadow: 0 14px 30px rgba(2, 6, 23, .10);
-        object-fit: contain;
+      .logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, rgba(124,58,237,.9), rgba(34,197,94,.85));
+        box-shadow: 0 10px 26px rgba(124,58,237,.22);
       }
       .links {
         display: flex;
@@ -92,7 +88,32 @@
       }
       .links a:hover {
         color: var(--text);
-        background: rgba(2, 6, 23, .04);
+        background: rgba(255,255,255,.06);
+      }
+      .lang {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 6px 8px;
+        border-radius: 999px;
+        border: 1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.05);
+      }
+      .lang button {
+        appearance: none;
+        border: 0;
+        background: transparent;
+        color: var(--muted);
+        font-size: 12.5px;
+        padding: 6px 8px;
+        border-radius: 999px;
+        cursor: pointer;
+        font-weight: 650;
+      }
+      .lang button[aria-pressed="true"] {
+        color: var(--text);
+        background: rgba(255,255,255,.08);
+        border: 1px solid rgba(255,255,255,.10);
       }
 
       .hero {
@@ -107,7 +128,7 @@
         background-image: url("./demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg");
         background-size: cover;
         background-position: center;
-        opacity: .16;
+        opacity: .22;
         filter: saturate(1.18) contrast(1.05);
         transform: scale(1.03);
       }
@@ -115,7 +136,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(247, 251, 255, .55), rgba(247, 251, 255, .92));
+        background: linear-gradient(180deg, rgba(7,10,18,.70), rgba(7,10,18,.90));
       }
       .hero-grid {
         position: relative;
@@ -167,12 +188,11 @@
         font-size: 14px;
       }
       .btn-primary {
-        color: #ffffff;
-        background: linear-gradient(135deg, rgba(37, 99, 235, .95), rgba(34, 197, 94, .90));
-        border-color: rgba(2, 6, 23, .06);
+        background: linear-gradient(135deg, rgba(124,58,237,.92), rgba(34,197,94,.86));
+        border-color: rgba(255,255,255,.10);
       }
       .btn-ghost {
-        background: rgba(2, 6, 23, .04);
+        background: rgba(255,255,255,.06);
         color: var(--text);
       }
       .kpis {
@@ -187,8 +207,8 @@
       .kpi {
         padding: 12px 12px;
         border-radius: 14px;
-        border: 1px solid rgba(15, 23, 42, .10);
-        background: rgba(255,255,255,.78);
+        border: 1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.05);
       }
       .kpi b { display: block; font-size: 14px; }
       .kpi span { display: block; margin-top: 4px; color: var(--muted); font-size: 12.5px; line-height: 1.4; }
@@ -205,8 +225,8 @@
         align-items: center;
         padding: 10px 12px;
         border-radius: 14px;
-        background: rgba(255,255,255,.78);
-        border: 1px solid rgba(15, 23, 42, .10);
+        background: rgba(255,255,255,.05);
+        border: 1px solid rgba(255,255,255,.10);
         color: var(--muted);
         font-size: 13px;
       }
@@ -269,13 +289,13 @@
         display: block;
         border-radius: 14px;
         overflow: hidden;
-        border: 1px solid rgba(15, 23, 42, .10);
-        background: rgba(255,255,255,.78);
+        border: 1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.04);
         transition: transform .12s ease, border-color .12s ease;
       }
       .g:hover {
         transform: translateY(-2px);
-        border-color: rgba(37, 99, 235, .35);
+        border-color: rgba(124,58,237,.35);
       }
       .gallery-group {
         margin-top: 18px;
@@ -290,11 +310,6 @@
       .group-head h3 {
         margin: 0;
         font-size: 16px;
-      }
-      .group-head p {
-        margin: 0;
-        color: var(--muted);
-        font-size: 12.5px;
       }
       .g img {
         width: 100%;
@@ -327,8 +342,8 @@
         font-size: 13px;
         padding: 10px 12px;
         border-radius: 12px;
-        border: 1px solid rgba(15, 23, 42, .10);
-        background: rgba(255,255,255,.78);
+        border: 1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.04);
       }
       .kv div b { color: var(--text); font-weight: 650; }
 
@@ -343,9 +358,9 @@
         padding: 12px 14px;
         border-radius: 999px;
         text-decoration: none;
-        background: rgba(34, 197, 94, .95);
-        border: 1px solid rgba(15, 23, 42, .10);
-        box-shadow: 0 18px 48px rgba(2, 6, 23, .18);
+        background: rgba(34,197,94,.92);
+        border: 1px solid rgba(255,255,255,.18);
+        box-shadow: 0 18px 48px rgba(0,0,0,.45);
         color: #04120a;
         font-weight: 750;
       }
@@ -362,11 +377,11 @@
       code {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
         font-size: 12.5px;
-        color: rgba(15, 23, 42, .86);
-        background: rgba(2, 6, 23, .04);
+        color: rgba(255,255,255,.85);
+        background: rgba(255,255,255,.07);
         padding: 2px 6px;
         border-radius: 7px;
-        border: 1px solid rgba(15, 23, 42, .10);
+        border: 1px solid rgba(255,255,255,.10);
       }
     </style>
   </head>
@@ -374,15 +389,21 @@
     <header class="nav">
       <div class="container nav-inner">
         <div class="brand">
-          <img class="logo-img" src="./assets/logo.png" alt="Duora logo" />
-          <span>Duora Amusement</span>
+          <span class="logo" aria-hidden="true"></span>
+          <span data-i18n="brand">广州哆啦游乐设备有限公司</span>
         </div>
         <nav class="links" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#gallery">Projects</a>
-          <a href="#contact">Contact</a>
+          <a href="#about" data-i18n="nav.about">关于我们</a>
+          <a href="#services" data-i18n="nav.services">服务能力</a>
+          <a href="#gallery" data-i18n="nav.projects">落地项目</a>
+          <a href="#contact" data-i18n="nav.contact">联系我们</a>
         </nav>
+        <div class="lang" aria-label="Language selector">
+          <button type="button" data-lang="zh" aria-pressed="true">中文</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
       </div>
     </header>
 
@@ -390,26 +411,25 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="card hero-main">
-            <h1>Indoor Playground Solutions that delight families.</h1>
-            <p class="lead">
-              Duora Amusement provides themed indoor playground design, layout planning, and product supply.
-              From concept to installation support, we help you build safe, high-impact attractions.
+            <h1 data-i18n="hero.title">室内儿童乐园整体解决方案，让每一次入场都更值得。</h1>
+            <p class="lead" data-i18n="hero.lead">
+              我们提供从方案设计、主题定制到生产供货与交付支持的一站式服务，帮助商场、亲子中心、儿童俱乐部快速落地高人气项目。
             </p>
             <div class="cta-row">
-              <a class="btn btn-primary" href="https://wa.me/8613802780239" target="_blank" rel="noopener">WhatsApp Us</a>
-              <a class="btn btn-ghost" href="#gallery">View Projects</a>
+              <a class="btn btn-primary" href="https://wa.me/8613802780239" target="_blank" rel="noopener" data-i18n="hero.ctaPrimary">WhatsApp 咨询</a>
+              <a class="btn btn-ghost" href="#gallery" data-i18n="hero.ctaSecondary">查看落地项目</a>
             </div>
             <div class="kpis">
-              <div class="kpi"><b>Custom design</b><span>Theme-based layouts tailored to your venue size and audience.</span></div>
-              <div class="kpi"><b>Safety first</b><span>Materials and structures focused on durability and child safety.</span></div>
-              <div class="kpi"><b>Fast response</b><span>Get a quote and concept quickly through WhatsApp.</span></div>
+              <div class="kpi"><b data-i18n="hero.kpi1.title">按场地定制</b><span data-i18n="hero.kpi1.desc">基于面积、层高与动线，做主题化分区与游玩路线设计。</span></div>
+              <div class="kpi"><b data-i18n="hero.kpi2.title">安全与耐用</b><span data-i18n="hero.kpi2.desc">结构与材料优先考虑儿童安全、耐磨与易维护。</span></div>
+              <div class="kpi"><b data-i18n="hero.kpi3.title">响应更快</b><span data-i18n="hero.kpi3.desc">发来平面图与需求，我们可快速给出初步方案与报价建议。</span></div>
             </div>
           </div>
           <aside class="card hero-side">
-            <div class="pill"><strong>Website</strong> <span>www.duoraindoorplayground.com</span></div>
-            <div class="pill"><strong>Contact</strong> <span>WhatsApp +86 13802780239</span></div>
-            <div class="pill"><strong>Scope</strong> <span>Design • Supply • Theming</span></div>
-            <div class="pill"><strong>Use cases</strong> <span>Malls • FEC • Kids Clubs</span></div>
+            <div class="pill"><strong data-i18n="hero.side.website">官网</strong> <span>www.duoraindoorplayground.com</span></div>
+            <div class="pill"><strong data-i18n="hero.side.contact">联系</strong> <span>WhatsApp +86 13802780239</span></div>
+            <div class="pill"><strong data-i18n="hero.side.scope">范围</strong> <span data-i18n="hero.side.scopeValue">设计 • 供货 • 主题定制</span></div>
+            <div class="pill"><strong data-i18n="hero.side.useCases">场景</strong> <span data-i18n="hero.side.useCasesValue">商场 • 亲子中心 • 儿童俱乐部</span></div>
           </aside>
         </div>
       </section>
@@ -417,21 +437,21 @@
       <section id="about">
         <div class="container">
           <div class="section-title">
-            <h2>About Duora Amusement</h2>
-            <p class="hint">A clear, modern one-page company profile.</p>
+            <h2 data-i18n="about.title">关于我们</h2>
+            <p class="hint" data-i18n="about.hint">专注室内儿童乐园与亲子互动空间的设计与制造。</p>
           </div>
           <div class="grid3">
             <div class="card feature">
-              <h3>What we do</h3>
-              <p>We create indoor playground concepts and supply equipment to help you launch memorable family entertainment venues.</p>
+              <h3 data-i18n="about.card1.title">我们做什么</h3>
+              <p data-i18n="about.card1.desc">提供室内儿童乐园整体解决方案：方案设计、产品供货、主题定制与交付支持，帮助你快速落地并形成持续客流。</p>
             </div>
             <div class="card feature">
-              <h3>How we work</h3>
-              <p>Share your floor plan and target theme. We propose a layout, confirm details, then support production and delivery.</p>
+              <h3 data-i18n="about.card2.title">如何合作</h3>
+              <p data-i18n="about.card2.desc">你提供场地平面图、面积层高与目标客群，我们输出分区动线与主题方案，确认清单后安排生产、打包与发货，并支持安装对接。</p>
             </div>
             <div class="card feature">
-              <h3>What you get</h3>
-              <p>Theme visuals, equipment list, and a gallery-backed reference of similar projects.</p>
+              <h3 data-i18n="about.card3.title">你将获得</h3>
+              <p data-i18n="about.card3.desc">主题效果参考、设备清单与报价建议、分区布局与尺寸建议，以及可对标的落地项目展示，便于内部决策与招商沟通。</p>
             </div>
           </div>
         </div>
@@ -440,21 +460,21 @@
       <section id="services">
         <div class="container">
           <div class="section-title">
-            <h2>Services</h2>
-            <p class="hint">Typical deliverables for indoor playground projects.</p>
+            <h2 data-i18n="services.title">服务能力</h2>
+            <p class="hint" data-i18n="services.hint">覆盖从前期方案到交付落地的关键环节。</p>
           </div>
           <div class="grid3">
             <div class="card feature">
-              <h3>Concept & layout</h3>
-              <p>Theme direction, zoning, flow optimization, and space-efficient play routes.</p>
+              <h3 data-i18n="services.card1.title">方案与布局</h3>
+              <p data-i18n="services.card1.desc">主题方向、分区规划、动线优化与容量评估，让空间利用更高、游玩更顺畅。</p>
             </div>
             <div class="card feature">
-              <h3>Equipment supply</h3>
-              <p>Soft play, slides, ball pits, obstacle elements, interactive areas, and themed features.</p>
+              <h3 data-i18n="services.card2.title">设备供货</h3>
+              <p data-i18n="services.card2.desc">软体区、滑梯、攀爬闯关、互动装置、主题造型等，按项目需求组合配置。</p>
             </div>
             <div class="card feature">
-              <h3>Project support</h3>
-              <p>Specification confirmation, packing guidance, and remote installation coordination.</p>
+              <h3 data-i18n="services.card3.title">交付支持</h3>
+              <p data-i18n="services.card3.desc">规格复核、包装清单、发货协调与安装对接，保障按期落地并可持续运营维护。</p>
             </div>
           </div>
         </div>
@@ -463,60 +483,53 @@
       <section id="gallery">
         <div class="container">
           <div class="section-title">
-            <h2>Project Gallery</h2>
-            <p class="hint">Click any image to open full size.</p>
+            <h2 data-i18n="projects.title">落地项目展示</h2>
+            <p class="hint" data-i18n="projects.hint">按项目分组展示，点击图片可查看大图。</p>
           </div>
-          <div class="gallery-group" data-group="Projects"><div class="group-head"><h3>Projects</h3><p>Selected designs in this style.</p></div><div class="gallery"><a class="g" href="./assets/gallery-80cdab41dc.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-80cdab41dc.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-e7d20d292e.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e7d20d292e.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-f9dee57b63.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-f9dee57b63.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-3e14463e93.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-3e14463e93.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-2d2cc85d5e.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-2d2cc85d5e.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-030a023da1.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-030a023da1.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-9e30db9c09.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-9e30db9c09.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-9e544a58ba.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-9e544a58ba.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-e87109ef0b.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e87109ef0b.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-93b7fa1cdd.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-93b7fa1cdd.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-5024c1466e.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-5024c1466e.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-4f52d4e8da.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-4f52d4e8da.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-e4cb57c752.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e4cb57c752.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-6762b1e5d1.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-6762b1e5d1.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-8c5f42e75c.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-8c5f42e75c.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-0032c8113f.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-0032c8113f.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-3727f6bcdd.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-3727f6bcdd.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-8393de8c46.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-8393de8c46.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-fac07dce96.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-fac07dce96.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-7ccbd3b129.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-7ccbd3b129.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-e7d37a5357.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e7d37a5357.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-aa749604b6.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-aa749604b6.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-b158c33bb5.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-b158c33bb5.png" alt="Project visual" /></a>
-<a class="g" href="./assets/gallery-c4ed30e089.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-c4ed30e089.png" alt="Project visual" /></a></div></div>
+          <div class="gallery-group" data-group="project"><div class="group-head"><h3>落地项目</h3><p class="hint" style="margin:0;" data-i18n="projects.groupHint">落地项目照片展示</p></div><div class="gallery"><a class="g" href="./assets/gallery-80cdab41dc.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-80cdab41dc.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-e7d20d292e.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e7d20d292e.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-f9dee57b63.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-f9dee57b63.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-3e14463e93.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-3e14463e93.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-2d2cc85d5e.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-2d2cc85d5e.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-030a023da1.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-030a023da1.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-9e30db9c09.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-9e30db9c09.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-9e544a58ba.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-9e544a58ba.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-e87109ef0b.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e87109ef0b.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-93b7fa1cdd.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-93b7fa1cdd.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-5024c1466e.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-5024c1466e.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-4f52d4e8da.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-4f52d4e8da.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-e4cb57c752.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e4cb57c752.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-6762b1e5d1.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-6762b1e5d1.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-8c5f42e75c.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-8c5f42e75c.png" alt="落地项目 project image" /></a>
+<a class="g" href="./assets/gallery-0032c8113f.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-0032c8113f.png" alt="落地项目 project image" /></a></div></div>
         </div>
       </section>
 
       <section id="contact">
         <div class="container">
           <div class="section-title">
-            <h2>Contact</h2>
-            <p class="hint">Fastest way to reach us is WhatsApp.</p>
+            <h2 data-i18n="contact.title">联系我们</h2>
+            <p class="hint" data-i18n="contact.hint">最快的沟通方式是 WhatsApp（也可直接发送场地信息获取方案建议）。</p>
           </div>
           <div class="contact">
             <div class="card box">
-              <h3 style="margin:0 0 8px;">Talk to our team</h3>
-              <p class="lead" style="margin:0; font-size:14px;">
-                Send your venue size, target theme, and preferred timeline. We’ll reply with next steps.
+              <h3 style="margin:0 0 8px;" data-i18n="contact.card1.title">与团队沟通</h3>
+              <p class="lead" style="margin:0; font-size:14px;" data-i18n="contact.card1.desc">
+                发来场地平面图/面积层高、目标主题与开业时间，我们将回复下一步资料与建议。
               </p>
               <div class="cta-row">
-                <a class="btn btn-primary" href="https://wa.me/8613802780239" target="_blank" rel="noopener">WhatsApp: +86 13802780239</a>
+                <a class="btn btn-primary" href="https://wa.me/8613802780239" target="_blank" rel="noopener" data-i18n="contact.card1.cta">WhatsApp：+86 13802780239</a>
               </div>
             </div>
             <div class="card box">
-              <h3 style="margin:0 0 8px;">Details</h3>
+              <h3 style="margin:0 0 8px;" data-i18n="contact.card2.title">公司信息</h3>
               <div class="kv">
-                <div><span>Company</span><b>Duora Amusement</b></div>
-                <div><span>Website</span><b>www.duoraindoorplayground.com</b></div>
-                <div><span>WhatsApp</span><b>+86 13802780239</b></div>
+                <div><span data-i18n="contact.kv.company">公司</span><b data-i18n="contact.kv.companyValue">广州哆啦游乐设备有限公司</b></div>
+                <div><span data-i18n="contact.kv.address">地址</span><b data-i18n="contact.kv.addressValue">广州市番禺区坑头村东线六横路一号</b></div>
+                <div><span data-i18n="contact.kv.website">官网</span><b>www.duoraindoorplayground.com</b></div>
+                <div><span data-i18n="contact.kv.whatsapp">WhatsApp</span><b>+86 13802780239</b></div>
               </div>
-              <p class="hint" style="margin-top:12px;">Tip: If you want a bilingual site (EN/中文), tell me your preferred Chinese copy and I’ll add a language toggle.</p>
+              <p class="hint" style="margin-top:12px;" data-i18n="contact.note">提示：如需更详细的项目清单与配置建议，请发送场地尺寸与目标预算区间。</p>
             </div>
           </div>
         </div>
@@ -530,8 +543,245 @@
 
     <footer>
       <div class="container">
-        © Duora Amusement. All rights reserved. <span style="opacity:.7;">Generated by Python.</span>
+        <span data-i18n="footer.copyright">© 广州哆啦游乐设备有限公司。保留所有权利。</span>
+        <span style="opacity:.7;" data-i18n="footer.generated">由 Python 生成。</span>
       </div>
     </footer>
+    <script>
+      (() => {
+        const I18N = {
+          zh: {
+            brand: "广州哆啦游乐设备有限公司",
+            nav: { about: "关于我们", services: "服务能力", projects: "落地项目", contact: "联系我们" },
+            hero: {
+              title: "室内儿童乐园整体解决方案，让每一次入场都更值得。",
+              lead: "我们提供从方案设计、主题定制到生产供货与交付支持的一站式服务，帮助商场、亲子中心、儿童俱乐部快速落地高人气项目。",
+              ctaPrimary: "WhatsApp 咨询",
+              ctaSecondary: "查看落地项目",
+              kpi1: { title: "按场地定制", desc: "基于面积、层高与动线，做主题化分区与游玩路线设计。" },
+              kpi2: { title: "安全与耐用", desc: "结构与材料优先考虑儿童安全、耐磨与易维护。" },
+              kpi3: { title: "响应更快", desc: "发来平面图与需求，我们可快速给出初步方案与报价建议。" },
+              side: { website: "官网", contact: "联系", scope: "范围", scopeValue: "设计 • 供货 • 主题定制", useCases: "场景", useCasesValue: "商场 • 亲子中心 • 儿童俱乐部" }
+            },
+            about: {
+              title: "关于我们",
+              hint: "专注室内儿童乐园与亲子互动空间的设计与制造。",
+              card1: { title: "我们做什么", desc: "提供室内儿童乐园整体解决方案：方案设计、产品供货、主题定制与交付支持，帮助你快速落地并形成持续客流。" },
+              card2: { title: "如何合作", desc: "你提供场地平面图、面积层高与目标客群，我们输出分区动线与主题方案，确认清单后安排生产、打包与发货，并支持安装对接。" },
+              card3: { title: "你将获得", desc: "主题效果参考、设备清单与报价建议、分区布局与尺寸建议，以及可对标的落地项目展示，便于内部决策与招商沟通。" }
+            },
+            services: {
+              title: "服务能力",
+              hint: "覆盖从前期方案到交付落地的关键环节。",
+              card1: { title: "方案与布局", desc: "主题方向、分区规划、动线优化与容量评估，让空间利用更高、游玩更顺畅。" },
+              card2: { title: "设备供货", desc: "软体区、滑梯、攀爬闯关、互动装置、主题造型等，按项目需求组合配置。" },
+              card3: { title: "交付支持", desc: "规格复核、包装清单、发货协调与安装对接，保障按期落地并可持续运营维护。" }
+            },
+            projects: { title: "落地项目展示", hint: "按项目分组展示，点击图片可查看大图。", groupHint: "落地项目照片展示" },
+            contact: {
+              title: "联系我们",
+              hint: "最快的沟通方式是 WhatsApp（也可直接发送场地信息获取方案建议）。",
+              card1: { title: "与团队沟通", desc: "发来场地平面图/面积层高、目标主题与开业时间，我们将回复下一步资料与建议。", cta: "WhatsApp：+86 13802780239" },
+              card2: { title: "公司信息" },
+              kv: { company: "公司", companyValue: "广州哆啦游乐设备有限公司", address: "地址", addressValue: "广州市番禺区坑头村东线六横路一号", website: "官网", whatsapp: "WhatsApp" },
+              note: "提示：如需更详细的项目清单与配置建议，请发送场地尺寸与目标预算区间。"
+            },
+            footer: { copyright: "© 广州哆啦游乐设备有限公司。保留所有权利。", generated: "由 Python 生成。" },
+            meta: {
+              title: "广州哆啦游乐设备有限公司｜室内儿童乐园整体解决方案",
+              description: "广州哆啦游乐设备有限公司提供室内儿童乐园整体解决方案：方案设计、主题定制、生产供货与交付支持。",
+              ogTitle: "广州哆啦游乐设备有限公司",
+              ogDescription: "室内儿童乐园整体解决方案：设计、定制、供货。",
+              ogSiteName: "广州哆啦游乐设备有限公司",
+              twitterTitle: "广州哆啦游乐设备有限公司",
+              twitterDescription: "室内儿童乐园整体解决方案：设计、定制、供货。"
+            }
+          },
+          en: {
+            brand: "Duora Amusement",
+            nav: { about: "About", services: "Services", projects: "Projects", contact: "Contact" },
+            hero: {
+              title: "Turnkey indoor playground solutions that delight families.",
+              lead: "From concept and layout to themed customization and equipment supply, we help you launch safe, high-impact venues with reliable delivery support.",
+              ctaPrimary: "WhatsApp Us",
+              ctaSecondary: "View Projects",
+              kpi1: { title: "Custom layout", desc: "Zoning and routes optimized for your floor plan, height, and audience." },
+              kpi2: { title: "Safety & durability", desc: "Materials and structures focused on long-term operation and child safety." },
+              kpi3: { title: "Fast response", desc: "Send your plan and requirements to get a quick concept and quote guidance." },
+              side: { website: "Website", contact: "Contact", scope: "Scope", scopeValue: "Design • Supply • Theming", useCases: "Use cases", useCasesValue: "Malls • FEC • Kids Clubs" }
+            },
+            about: {
+              title: "About",
+              hint: "Focused on indoor playground planning and manufacturing.",
+              card1: { title: "What we do", desc: "We provide turnkey indoor playground solutions covering design, equipment supply, themed customization and delivery support to help you launch and operate smoothly." },
+              card2: { title: "How we work", desc: "Share your floor plan, theme preference and target audience. We propose a layout and BOM, confirm details, then arrange production, packing, shipping and installation coordination." },
+              card3: { title: "What you get", desc: "Reference visuals, equipment list, layout suggestions and grouped project photos to support internal decision-making and business communication." }
+            },
+            services: {
+              title: "Services",
+              hint: "Key deliverables from planning to delivery.",
+              card1: { title: "Concept & layout", desc: "Theme direction, zoning, flow optimization and capacity planning." },
+              card2: { title: "Equipment supply", desc: "Soft play, slides, obstacle elements, interactive areas and themed features." },
+              card3: { title: "Delivery support", desc: "Spec confirmation, packing list, shipping coordination and installation handover." }
+            },
+            projects: { title: "Projects", hint: "Grouped by project name. Click any image to open full size.", groupHint: "On-site project photos" },
+            contact: {
+              title: "Contact",
+              hint: "WhatsApp is the fastest way to reach us. Send your floor plan for quick guidance.",
+              card1: { title: "Talk to our team", desc: "Send your floor plan, venue size/height, theme preference and timeline. We’ll reply with next steps.", cta: "WhatsApp: +86 13802780239" },
+              card2: { title: "Company details" },
+              kv: { company: "Company", companyValue: "Guangzhou Duola Amusement Equipment Co., Ltd.", address: "Address", addressValue: "No. 1, Dongxian 6th Heng Rd, Kengtou Village, Panyu District, Guangzhou, China", website: "Website", whatsapp: "WhatsApp" },
+              note: "Tip: Share your target budget range to receive a more precise configuration suggestion."
+            },
+            footer: { copyright: "© Guangzhou Duola Amusement Equipment Co., Ltd.. All rights reserved.", generated: "Generated by Python." },
+            meta: {
+              title: "Duora Amusement | Indoor Playground Solutions",
+              description: "Duora Amusement provides turnkey indoor playground solutions: concept design, themed customization, equipment supply and delivery support.",
+              ogTitle: "Duora Amusement",
+              ogDescription: "Turnkey indoor playground solutions: design, customization, and supply.",
+              ogSiteName: "Duora Amusement",
+              twitterTitle: "Duora Amusement",
+              twitterDescription: "Turnkey indoor playground solutions: design, customization, and supply."
+            }
+          },
+          es: {
+            brand: "Duora Amusement",
+            nav: { about: "Empresa", services: "Servicios", projects: "Proyectos", contact: "Contacto" },
+            hero: {
+              title: "Soluciones integrales de parques infantiles indoor.",
+              lead: "Desde el concepto y la distribución hasta la tematización y el suministro de equipos, ayudamos a lanzar proyectos seguros y atractivos con soporte de entrega.",
+              ctaPrimary: "WhatsApp",
+              ctaSecondary: "Ver proyectos",
+              kpi1: { title: "Diseño a medida", desc: "Zonificación y rutas optimizadas según tu plano y público objetivo." },
+              kpi2: { title: "Seguridad y durabilidad", desc: "Estructuras y materiales pensados para operación a largo plazo." },
+              kpi3: { title: "Respuesta rápida", desc: "Envíanos el plano y requisitos para una propuesta inicial." },
+              side: { website: "Web", contact: "Contacto", scope: "Alcance", scopeValue: "Diseño • Suministro • Tematización", useCases: "Escenarios", useCasesValue: "Centros comerciales • FEC • Clubes infantiles" }
+            },
+            about: {
+              title: "Empresa",
+              hint: "Especialistas en planificación y fabricación de parques indoor.",
+              card1: { title: "Qué hacemos", desc: "Soluciones integrales: diseño, suministro de equipos, personalización temática y soporte de entrega para ayudarte a abrir y operar con confianza." },
+              card2: { title: "Cómo trabajamos", desc: "Comparte tu plano, tema y público. Proponemos distribución y lista de equipos, confirmamos detalles y coordinamos producción, embalaje, envío e instalación." },
+              card3: { title: "Qué recibes", desc: "Referencias visuales, lista de equipos, sugerencias de distribución y fotos de proyectos agrupadas para facilitar la decisión." }
+            },
+            services: {
+              title: "Servicios",
+              hint: "De la planificación a la entrega.",
+              card1: { title: "Concepto y distribución", desc: "Dirección temática, zonificación y optimización del flujo." },
+              card2: { title: "Suministro de equipos", desc: "Soft play, toboganes, obstáculos, áreas interactivas y elementos temáticos." },
+              card3: { title: "Soporte de entrega", desc: "Confirmación de especificaciones, lista de embalaje, coordinación de envío e instalación." }
+            },
+            projects: { title: "Proyectos", hint: "Agrupados por proyecto. Haz clic para ver a tamaño completo.", groupHint: "Fotos de proyectos instalados" },
+            contact: {
+              title: "Contacto",
+              hint: "WhatsApp es la forma más rápida. Envíanos tu plano para una orientación inicial.",
+              card1: { title: "Habla con el equipo", desc: "Envía plano, tamaño/altura, tema y fecha objetivo. Te responderemos con los siguientes pasos.", cta: "WhatsApp: +86 13802780239" },
+              card2: { title: "Datos de la empresa" },
+              kv: { company: "Empresa", companyValue: "Guangzhou Duola Amusement Equipment Co., Ltd.", address: "Dirección", addressValue: "N.º 1, Dongxian 6th Heng Rd, Aldea Kengtou, Distrito Panyu, Guangzhou, China", website: "Web", whatsapp: "WhatsApp" },
+              note: "Consejo: comparte el presupuesto objetivo para una recomendación más precisa."
+            },
+            footer: { copyright: "© Guangzhou Duola Amusement Equipment Co., Ltd.. Todos los derechos reservados.", generated: "Generado por Python." },
+            meta: {
+              title: "Duora Amusement | Soluciones de parques infantiles indoor",
+              description: "Duora Amusement ofrece soluciones integrales para parques infantiles indoor: diseño, tematización, suministro de equipos y soporte de entrega.",
+              ogTitle: "Duora Amusement",
+              ogDescription: "Soluciones integrales: diseño, personalización y suministro.",
+              ogSiteName: "Duora Amusement",
+              twitterTitle: "Duora Amusement",
+              twitterDescription: "Soluciones integrales: diseño, personalización y suministro."
+            }
+          },
+          ru: {
+            brand: "Duora Amusement",
+            nav: { about: "О компании", services: "Услуги", projects: "Проекты", contact: "Контакты" },
+            hero: {
+              title: "Комплексные решения для indoor‑детских площадок.",
+              lead: "От концепции и планировки до тематизации и поставки оборудования — помогаем запускать безопасные и востребованные проекты с поддержкой поставки.",
+              ctaPrimary: "Написать в WhatsApp",
+              ctaSecondary: "Смотреть проекты",
+              kpi1: { title: "Индивидуальная планировка", desc: "Зонирование и маршруты под ваш план, высоту и аудиторию." },
+              kpi2: { title: "Безопасность и ресурс", desc: "Материалы и конструкции для длительной эксплуатации и безопасности детей." },
+              kpi3: { title: "Быстрый ответ", desc: "Пришлите план и требования — дадим первичную концепцию и ориентир по стоимости." },
+              side: { website: "Сайт", contact: "Контакт", scope: "Формат", scopeValue: "Дизайн • Поставка • Тематизация", useCases: "Сценарии", useCasesValue: "ТЦ • FEC • Детские клубы" }
+            },
+            about: {
+              title: "О компании",
+              hint: "Проектирование и производство indoor‑площадок.",
+              card1: { title: "Что делаем", desc: "Комплексные решения: дизайн, поставка оборудования, тематизация и поддержка поставки для уверенного запуска и работы." },
+              card2: { title: "Как работаем", desc: "Вы присылаете план помещения, тему и аудиторию. Мы предлагаем планировку и комплектацию, затем организуем производство, упаковку, доставку и координацию монтажа." },
+              card3: { title: "Что получите", desc: "Визуальные референсы, список оборудования, рекомендации по планировке и фото реализованных проектов по группам." }
+            },
+            services: {
+              title: "Услуги",
+              hint: "Ключевые этапы от идеи до поставки.",
+              card1: { title: "Концепция и планировка", desc: "Тема, зонирование, оптимизация потоков и вместимость." },
+              card2: { title: "Поставка оборудования", desc: "Soft play, горки, препятствия, интерактивные зоны и тематические элементы." },
+              card3: { title: "Поддержка поставки", desc: "Сверка спецификаций, упаковочный лист, доставка и передача на монтаж." }
+            },
+            projects: { title: "Проекты", hint: "Сгруппировано по проектам. Нажмите на фото для увеличения.", groupHint: "Фото реализованных проектов" },
+            contact: {
+              title: "Контакты",
+              hint: "Самый быстрый способ — WhatsApp. Пришлите план помещения для консультации.",
+              card1: { title: "Связаться с командой", desc: "Пришлите план, размеры/высоту, тему и сроки. Мы ответим с дальнейшими шагами.", cta: "WhatsApp: +86 13802780239" },
+              card2: { title: "Реквизиты" },
+              kv: { company: "Компания", companyValue: "Guangzhou Duola Amusement Equipment Co., Ltd.", address: "Адрес", addressValue: "Китай, г. Гуанчжоу, р-н Паньюй, дер. Кэнтoу, ул. Dongxian 6th Heng Rd, д. 1", website: "Сайт", whatsapp: "WhatsApp" },
+              note: "Совет: укажите целевой бюджет, чтобы мы точнее предложили комплектацию."
+            },
+            footer: { copyright: "© Guangzhou Duola Amusement Equipment Co., Ltd.. Все права защищены.", generated: "Сгенерировано Python." },
+            meta: {
+              title: "Duora Amusement | Решения для детских игровых комнат",
+              description: "Duora Amusement предлагает комплексные решения для indoor-парков: дизайн, тематизация, поставка оборудования и поддержка поставки.",
+              ogTitle: "Duora Amusement",
+              ogDescription: "Комплексные решения: дизайн, кастомизация и поставка.",
+              ogSiteName: "Duora Amusement",
+              twitterTitle: "Duora Amusement",
+              twitterDescription: "Комплексные решения: дизайн, кастомизация и поставка."
+            }
+          }
+        };
+
+        function getPath(obj, key) {
+          return key.split('.').reduce((o, k) => (o && o[k] !== undefined ? o[k] : undefined), obj);
+        }
+
+        function applyLang(lang) {
+          const dict = I18N[lang] || I18N.zh;
+          document.documentElement.lang = lang === "zh" ? "zh-CN" : lang;
+          if (dict?.meta?.title) document.title = dict.meta.title;
+          const metaDesc = document.querySelector('meta[name="description"]');
+          if (metaDesc && dict?.meta?.description) metaDesc.setAttribute("content", dict.meta.description);
+          const ogTitle = document.querySelector('meta[property="og:title"]');
+          if (ogTitle && dict?.meta?.ogTitle) ogTitle.setAttribute("content", dict.meta.ogTitle);
+          const ogDesc = document.querySelector('meta[property="og:description"]');
+          if (ogDesc && dict?.meta?.ogDescription) ogDesc.setAttribute("content", dict.meta.ogDescription);
+          const ogSite = document.querySelector('meta[property="og:site_name"]');
+          if (ogSite && dict?.meta?.ogSiteName) ogSite.setAttribute("content", dict.meta.ogSiteName);
+          const twTitle = document.querySelector('meta[name="twitter:title"]');
+          if (twTitle && dict?.meta?.twitterTitle) twTitle.setAttribute("content", dict.meta.twitterTitle);
+          const twDesc = document.querySelector('meta[name="twitter:description"]');
+          if (twDesc && dict?.meta?.twitterDescription) twDesc.setAttribute("content", dict.meta.twitterDescription);
+
+          document.querySelectorAll("[data-i18n]").forEach((el) => {
+            const key = el.getAttribute("data-i18n");
+            const val = getPath(dict, key);
+            if (typeof val === "string") el.textContent = val;
+          });
+
+          document.querySelectorAll(".lang [data-lang]").forEach((btn) => {
+            btn.setAttribute("aria-pressed", btn.getAttribute("data-lang") === lang ? "true" : "false");
+          });
+
+          localStorage.setItem("site_lang", lang);
+        }
+
+        const saved = localStorage.getItem("site_lang");
+        const initial = (saved && I18N[saved]) ? saved : "zh";
+        applyLang(initial);
+
+        document.querySelectorAll(".lang [data-lang]").forEach((btn) => {
+          btn.addEventListener("click", () => applyLang(btn.getAttribute("data-lang")));
+        });
+      })();
+    </script>
   </body>
 </html>
