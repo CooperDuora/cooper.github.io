@@ -3,142 +3,513 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Duora Amusement</title>
-    <meta name="description" content="Duora Amusement - Indoor Playground" />
+    <title>Duora Amusement | Indoor Playground Solutions</title>
+    <meta name="description" content="Duora Amusement designs and supplies indoor playground solutions with themed attractions, soft play, and custom layouts." />
     <link rel="canonical" href="https://www.duoraindoorplayground.com/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Duora Amusement" />
-    <meta property="og:description" content="Duora Amusement - Indoor Playground" />
+    <meta property="og:description" content="Indoor playground solutions: design, customization, and supply." />
     <meta property="og:url" content="https://www.duoraindoorplayground.com/" />
     <meta property="og:site_name" content="Duora Amusement" />
     <meta property="og:image" content="https://www.duoraindoorplayground.com/demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Duora Amusement" />
-    <meta name="twitter:description" content="Duora Amusement - Indoor Playground" />
+    <meta name="twitter:description" content="Indoor playground solutions: design, customization, and supply." />
     <meta name="twitter:image" content="https://www.duoraindoorplayground.com/demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg" />
-
-    <!-- Keep the demo's css files as a reference -->
-    <link rel="stylesheet" href="./demo_files/ceccbootstrap.min.css,global.css" />
-    <link rel="stylesheet" href="./demo_files/site.css" />
 
     <style>
       :root {
-        color-scheme: light;
+        --bg: #070a12;
+        --panel: rgba(255,255,255,.06);
+        --line: rgba(255,255,255,.10);
+        --text: rgba(255,255,255,.92);
+        --muted: rgba(255,255,255,.72);
+        --brand: #7c3aed;
+        --brand2: #22c55e;
+        --shadow: 0 22px 60px rgba(0,0,0,.45);
       }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
       body {
         margin: 0;
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
-        background: #0b1220;
-        color: #ffffff;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        background: radial-gradient(1200px 700px at 20% 0%, rgba(124,58,237,.20), transparent 55%),
+                    radial-gradient(1200px 700px at 80% 30%, rgba(34,197,94,.16), transparent 55%),
+                    radial-gradient(900px 700px at 60% 100%, rgba(59,130,246,.14), transparent 60%),
+                    var(--bg);
+        color: var(--text);
       }
+      a { color: inherit; }
+      .container { width: min(1120px, 100%); margin: 0 auto; padding: 0 18px; }
+
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(7,10,18,.55);
+        border-bottom: 1px solid rgba(255,255,255,.08);
+        backdrop-filter: blur(14px);
+      }
+      .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0;
+        gap: 12px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        letter-spacing: .2px;
+      }
+      .logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, rgba(124,58,237,.9), rgba(34,197,94,.85));
+        box-shadow: 0 10px 26px rgba(124,58,237,.22);
+      }
+      .links {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .links a {
+        font-size: 13px;
+        text-decoration: none;
+        color: var(--muted);
+        padding: 8px 10px;
+        border-radius: 999px;
+      }
+      .links a:hover {
+        color: var(--text);
+        background: rgba(255,255,255,.06);
+      }
+
       .hero {
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        padding: 56px 18px;
         position: relative;
+        padding: 64px 0 42px;
         overflow: hidden;
       }
       .hero::before {
         content: "";
         position: absolute;
         inset: 0;
-        background:
-          radial-gradient(900px 500px at 20% 15%, rgba(99, 102, 241, 0.35), transparent 55%),
-          radial-gradient(900px 500px at 75% 35%, rgba(16, 185, 129, 0.30), transparent 55%),
-          radial-gradient(900px 700px at 60% 90%, rgba(245, 158, 11, 0.22), transparent 60%),
-          linear-gradient(180deg, rgba(11, 18, 32, 0.85), rgba(11, 18, 32, 0.85));
-        z-index: 0;
+        background-image: url("./demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg");
+        background-size: cover;
+        background-position: center;
+        opacity: .22;
+        filter: saturate(1.18) contrast(1.05);
+        transform: scale(1.03);
       }
-      .hero-media {
+      .hero::after {
+        content: "";
         position: absolute;
         inset: 0;
-        z-index: 0;
-        opacity: 0.18;
-        filter: saturate(1.15) contrast(1.05);
+        background: linear-gradient(180deg, rgba(7,10,18,.70), rgba(7,10,18,.90));
       }
-      .hero-media img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      .hero-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1.3fr .7fr;
+        align-items: stretch;
+      }
+      @media (max-width: 900px) {
+        .hero-grid { grid-template-columns: 1fr; }
       }
       .card {
-        position: relative;
-        z-index: 1;
-        width: min(980px, 100%);
+        border: 1px solid var(--line);
+        background: var(--panel);
         border-radius: 18px;
-        border: 1px solid rgba(255, 255, 255, 0.10);
-        background: rgba(255, 255, 255, 0.06);
-        backdrop-filter: blur(14px);
-        padding: 34px 28px;
-        box-shadow:
-          0 24px 60px rgba(0, 0, 0, 0.35),
-          inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        box-shadow: var(--shadow);
+      }
+      .hero-main {
+        padding: 28px 22px;
       }
       h1 {
-        margin: 0 0 10px;
-        font-size: clamp(32px, 4.8vw, 56px);
-        line-height: 1.05;
-        letter-spacing: -0.02em;
+        margin: 0 0 12px;
+        font-size: clamp(34px, 5vw, 60px);
+        line-height: 1.02;
+        letter-spacing: -0.03em;
       }
-      .sub {
+      .lead {
         margin: 0;
-        font-size: clamp(14px, 2.0vw, 18px);
-        color: rgba(255, 255, 255, 0.82);
-        line-height: 1.55;
+        color: var(--muted);
+        font-size: clamp(14px, 2vw, 18px);
+        line-height: 1.6;
       }
-      .meta {
+      .cta-row {
         margin-top: 18px;
         display: flex;
-        gap: 10px;
+        gap: 12px;
         flex-wrap: wrap;
       }
-      .pill {
-        font-size: 13px;
-        padding: 8px 10px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.10);
-        color: rgba(255, 255, 255, 0.86);
-      }
-      .footer {
-        position: relative;
-        z-index: 1;
-        margin-top: 22px;
-        font-size: 13px;
-        color: rgba(255, 255, 255, 0.65);
-      }
-      .footer a {
-        color: rgba(255, 255, 255, 0.9);
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,.12);
         text-decoration: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+        font-weight: 650;
+        font-size: 14px;
       }
-      .footer a:hover {
-        border-bottom-color: rgba(255, 255, 255, 0.8);
+      .btn-primary {
+        background: linear-gradient(135deg, rgba(124,58,237,.92), rgba(34,197,94,.86));
+        border-color: rgba(255,255,255,.10);
+      }
+      .btn-ghost {
+        background: rgba(255,255,255,.06);
+        color: var(--text);
+      }
+      .kpis {
+        margin-top: 18px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+      }
+      @media (max-width: 520px) {
+        .kpis { grid-template-columns: 1fr; }
+      }
+      .kpi {
+        padding: 12px 12px;
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.05);
+      }
+      .kpi b { display: block; font-size: 14px; }
+      .kpi span { display: block; margin-top: 4px; color: var(--muted); font-size: 12.5px; line-height: 1.4; }
+
+      .hero-side {
+        padding: 18px;
+        display: grid;
+        gap: 10px;
+        align-content: start;
+      }
+      .pill {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        padding: 10px 12px;
+        border-radius: 14px;
+        background: rgba(255,255,255,.05);
+        border: 1px solid rgba(255,255,255,.10);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .pill strong { color: var(--text); }
+
+      section {
+        padding: 38px 0;
+      }
+      .section-title {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: -0.01em;
+      }
+      .hint {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .grid3 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px;
+      }
+      @media (max-width: 900px) {
+        .grid3 { grid-template-columns: 1fr; }
+      }
+      .feature {
+        padding: 16px 16px;
+      }
+      .feature h3 {
+        margin: 0 0 6px;
+        font-size: 16px;
+      }
+      .feature p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13.5px;
+        line-height: 1.55;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+      }
+      @media (max-width: 1020px) {
+        .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      }
+      @media (max-width: 720px) {
+        .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      }
+      .g {
+        display: block;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.04);
+        transition: transform .12s ease, border-color .12s ease;
+      }
+      .g:hover {
+        transform: translateY(-2px);
+        border-color: rgba(124,58,237,.35);
+      }
+      .g img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      @media (max-width: 900px) {
+        .contact { grid-template-columns: 1fr; }
+      }
+      .contact .box {
+        padding: 18px;
+      }
+      .kv {
+        display: grid;
+        gap: 8px;
+        margin-top: 10px;
+      }
+      .kv div {
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        color: var(--muted);
+        font-size: 13px;
+        padding: 10px 12px;
+        border-radius: 12px;
+        border: 1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.04);
+      }
+      .kv div b { color: var(--text); font-weight: 650; }
+
+      .whatsapp-fab {
+        position: fixed;
+        right: 18px;
+        bottom: 18px;
+        z-index: 80;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        border-radius: 999px;
+        text-decoration: none;
+        background: rgba(34,197,94,.92);
+        border: 1px solid rgba(255,255,255,.18);
+        box-shadow: 0 18px 48px rgba(0,0,0,.45);
+        color: #04120a;
+        font-weight: 750;
+      }
+      .whatsapp-fab small {
+        display: block;
+        font-weight: 650;
+        opacity: .85;
+      }
+      footer {
+        padding: 24px 0 40px;
+        color: rgba(255,255,255,.55);
+        font-size: 13px;
+      }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 12.5px;
+        color: rgba(255,255,255,.85);
+        background: rgba(255,255,255,.07);
+        padding: 2px 6px;
+        border-radius: 7px;
+        border: 1px solid rgba(255,255,255,.10);
       }
     </style>
   </head>
   <body>
-    <main class="hero">
-      <div class="hero-media" aria-hidden="true">
-        <img src="./demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg" alt="" />
-      </div>
-      <section class="card" aria-label="Hero">
-        <h1>Duora Amusement</h1>
-        <p class="sub">
-          Indoor playground & family fun. This is a static site generated from the provided <code>demo.html</code> assets.
-        </p>
-        <div class="meta">
-          <span class="pill">Static website</span>
-          <span class="pill">Domain: www.duoraindoorplayground.com</span>
-          <span class="pill">Built with Python</span>
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="brand">
+          <span class="logo" aria-hidden="true"></span>
+          <span>Duora Amusement</span>
         </div>
-        <div class="footer">
-          Visit: <a href="https://www.duoraindoorplayground.com/">www.duoraindoorplayground.com</a>
+        <nav class="links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#gallery">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="card hero-main">
+            <h1>Indoor Playground Solutions that delight families.</h1>
+            <p class="lead">
+              Duora Amusement provides themed indoor playground design, layout planning, and product supply.
+              From concept to installation support, we help you build safe, high-impact attractions.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="https://wa.me/8613802780239" target="_blank" rel="noopener">WhatsApp Us</a>
+              <a class="btn btn-ghost" href="#gallery">View Projects</a>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><b>Custom design</b><span>Theme-based layouts tailored to your venue size and audience.</span></div>
+              <div class="kpi"><b>Safety first</b><span>Materials and structures focused on durability and child safety.</span></div>
+              <div class="kpi"><b>Fast response</b><span>Get a quote and concept quickly through WhatsApp.</span></div>
+            </div>
+          </div>
+          <aside class="card hero-side">
+            <div class="pill"><strong>Website</strong> <span>www.duoraindoorplayground.com</span></div>
+            <div class="pill"><strong>Contact</strong> <span>WhatsApp +86 13802780239</span></div>
+            <div class="pill"><strong>Scope</strong> <span>Design • Supply • Theming</span></div>
+            <div class="pill"><strong>Use cases</strong> <span>Malls • FEC • Kids Clubs</span></div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>About Duora Amusement</h2>
+            <p class="hint">A clear, modern one-page company profile.</p>
+          </div>
+          <div class="grid3">
+            <div class="card feature">
+              <h3>What we do</h3>
+              <p>We create indoor playground concepts and supply equipment to help you launch memorable family entertainment venues.</p>
+            </div>
+            <div class="card feature">
+              <h3>How we work</h3>
+              <p>Share your floor plan and target theme. We propose a layout, confirm details, then support production and delivery.</p>
+            </div>
+            <div class="card feature">
+              <h3>What you get</h3>
+              <p>Theme visuals, equipment list, and a gallery-backed reference of similar projects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <div class="section-title">
+            <h2>Services</h2>
+            <p class="hint">Typical deliverables for indoor playground projects.</p>
+          </div>
+          <div class="grid3">
+            <div class="card feature">
+              <h3>Concept & layout</h3>
+              <p>Theme direction, zoning, flow optimization, and space-efficient play routes.</p>
+            </div>
+            <div class="card feature">
+              <h3>Equipment supply</h3>
+              <p>Soft play, slides, ball pits, obstacle elements, interactive areas, and themed features.</p>
+            </div>
+            <div class="card feature">
+              <h3>Project support</h3>
+              <p>Specification confirmation, packing guidance, and remote installation coordination.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <div class="container">
+          <div class="section-title">
+            <h2>Project Gallery</h2>
+            <p class="hint">Click any image to open full size.</p>
+          </div>
+          <div class="gallery">
+            <a class="g" href="./assets/gallery-80cdab41dc.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-80cdab41dc.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-e7d20d292e.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e7d20d292e.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-f9dee57b63.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-f9dee57b63.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-3e14463e93.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-3e14463e93.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-2d2cc85d5e.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-2d2cc85d5e.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-030a023da1.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-030a023da1.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-9e30db9c09.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-9e30db9c09.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-9e544a58ba.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-9e544a58ba.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-e87109ef0b.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e87109ef0b.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-93b7fa1cdd.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-93b7fa1cdd.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-5024c1466e.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-5024c1466e.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-4f52d4e8da.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-4f52d4e8da.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-e4cb57c752.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e4cb57c752.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-6762b1e5d1.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-6762b1e5d1.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-8c5f42e75c.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-8c5f42e75c.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-0032c8113f.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-0032c8113f.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-3727f6bcdd.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-3727f6bcdd.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-8393de8c46.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-8393de8c46.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-fac07dce96.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-fac07dce96.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-7ccbd3b129.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-7ccbd3b129.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-e7d37a5357.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-e7d37a5357.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-aa749604b6.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-aa749604b6.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-b158c33bb5.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-b158c33bb5.png" alt="Project visual" /></a>
+<a class="g" href="./assets/gallery-c4ed30e089.png" target="_blank" rel="noopener"><img loading="lazy" src="./assets/gallery-c4ed30e089.png" alt="Project visual" /></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p class="hint">Fastest way to reach us is WhatsApp.</p>
+          </div>
+          <div class="contact">
+            <div class="card box">
+              <h3 style="margin:0 0 8px;">Talk to our team</h3>
+              <p class="lead" style="margin:0; font-size:14px;">
+                Send your venue size, target theme, and preferred timeline. We’ll reply with next steps.
+              </p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="https://wa.me/8613802780239" target="_blank" rel="noopener">WhatsApp: +86 13802780239</a>
+              </div>
+            </div>
+            <div class="card box">
+              <h3 style="margin:0 0 8px;">Details</h3>
+              <div class="kv">
+                <div><span>Company</span><b>Duora Amusement</b></div>
+                <div><span>Website</span><b>www.duoraindoorplayground.com</b></div>
+                <div><span>WhatsApp</span><b>+86 13802780239</b></div>
+              </div>
+              <p class="hint" style="margin-top:12px;">Tip: If you want a bilingual site (EN/中文), tell me your preferred Chinese copy and I’ll add a language toggle.</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <a class="whatsapp-fab" href="https://wa.me/8613802780239" target="_blank" rel="noopener">
+      WhatsApp
+      <small>+86 13802780239</small>
+    </a>
+
+    <footer>
+      <div class="container">
+        © Duora Amusement. All rights reserved. <span style="opacity:.7;">Generated by Python.</span>
+      </div>
+    </footer>
   </body>
 </html>
