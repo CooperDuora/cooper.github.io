@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Duora Amusement</title>
+    <meta name="description" content="Duora Amusement - Indoor Playground" />
+    <link rel="canonical" href="https://www.duoraindoorplayground.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Duora Amusement" />
+    <meta property="og:description" content="Duora Amusement - Indoor Playground" />
+    <meta property="og:url" content="https://www.duoraindoorplayground.com/" />
+    <meta property="og:site_name" content="Duora Amusement" />
+    <meta property="og:image" content="https://www.duoraindoorplayground.com/demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Duora Amusement" />
+    <meta name="twitter:description" content="Duora Amusement - Indoor Playground" />
+    <meta name="twitter:image" content="https://www.duoraindoorplayground.com/demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg" />
+
+    <!-- Keep the demo's css files as a reference -->
+    <link rel="stylesheet" href="./demo_files/ceccbootstrap.min.css,global.css" />
+    <link rel="stylesheet" href="./demo_files/site.css" />
+
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        background: #0b1220;
+        color: #ffffff;
+      }
+      .hero {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 56px 18px;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(900px 500px at 20% 15%, rgba(99, 102, 241, 0.35), transparent 55%),
+          radial-gradient(900px 500px at 75% 35%, rgba(16, 185, 129, 0.30), transparent 55%),
+          radial-gradient(900px 700px at 60% 90%, rgba(245, 158, 11, 0.22), transparent 60%),
+          linear-gradient(180deg, rgba(11, 18, 32, 0.85), rgba(11, 18, 32, 0.85));
+        z-index: 0;
+      }
+      .hero-media {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        opacity: 0.18;
+        filter: saturate(1.15) contrast(1.05);
+      }
+      .hero-media img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card {
+        position: relative;
+        z-index: 1;
+        width: min(980px, 100%);
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(14px);
+        padding: 34px 28px;
+        box-shadow:
+          0 24px 60px rgba(0, 0, 0, 0.35),
+          inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: clamp(32px, 4.8vw, 56px);
+        line-height: 1.05;
+        letter-spacing: -0.02em;
+      }
+      .sub {
+        margin: 0;
+        font-size: clamp(14px, 2.0vw, 18px);
+        color: rgba(255, 255, 255, 0.82);
+        line-height: 1.55;
+      }
+      .meta {
+        margin-top: 18px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .pill {
+        font-size: 13px;
+        padding: 8px 10px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        color: rgba(255, 255, 255, 0.86);
+      }
+      .footer {
+        position: relative;
+        z-index: 1;
+        margin-top: 22px;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.65);
+      }
+      .footer a {
+        color: rgba(255, 255, 255, 0.9);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+      }
+      .footer a:hover {
+        border-bottom-color: rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="./demo_files/e89c4f2c-e868-4685-8a31-31c10adf167b.jpg_1920xaf.jpg" alt="" />
+      </div>
+      <section class="card" aria-label="Hero">
+        <h1>Duora Amusement</h1>
+        <p class="sub">
+          Indoor playground & family fun. This is a static site generated from the provided <code>demo.html</code> assets.
+        </p>
+        <div class="meta">
+          <span class="pill">Static website</span>
+          <span class="pill">Domain: www.duoraindoorplayground.com</span>
+          <span class="pill">Built with Python</span>
+        </div>
+        <div class="footer">
+          Visit: <a href="https://www.duoraindoorplayground.com/">www.duoraindoorplayground.com</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
