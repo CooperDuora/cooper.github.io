@@ -6,6 +6,12 @@
     <title>广州哆啦游乐设备有限公司｜室内儿童乐园整体解决方案</title>
     <meta name="description" content="广州哆啦游乐设备有限公司提供室内儿童乐园整体解决方案：方案设计、主题定制、生产供货与交付支持。" />
     <link rel="canonical" href="https://www.duolapark.com/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="广州哆啦游乐设备有限公司" />
@@ -45,22 +51,31 @@
 
     <style>
       :root {
-        --bg: #f8fbff;
-        --bg-soft: #fff7fb;
-        --panel: rgba(255,255,255,.92);
+        --bg: #f6f9ff;
+        --bg-soft: #fff8fc;
+        --panel: rgba(255,255,255,.93);
         --line: rgba(15, 23, 42, .10);
-        --text: rgba(15, 23, 42, .92);
-        --muted: rgba(15, 23, 42, .62);
+        --text: rgba(15, 23, 42, .93);
+        --muted: rgba(15, 23, 42, .60);
         --brand: #5b7cfa;
         --brand2: #22c55e;
         --brand3: #f59e0b;
-        --shadow: 0 14px 40px rgba(2,6,23,.10);
+        --shadow: 0 14px 42px rgba(2,6,23,.09);
+        --radius-lg: 18px;
+        --radius-md: 14px;
+        --section-y: clamp(28px, 5vw, 44px);
+        --font-sans: "Plus Jakarta Sans", "Noto Sans SC", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+        --font-display: "Plus Jakarta Sans", "Noto Sans SC", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
       }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
       body {
         margin: 0;
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+        font-family: var(--font-sans);
+        font-size: 15px;
+        line-height: 1.58;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
         background: radial-gradient(1100px 600px at 10% -10%, rgba(91,124,250,.20), transparent 60%),
                     radial-gradient(1100px 650px at 95% 5%, rgba(34,197,94,.16), transparent 60%),
                     radial-gradient(1000px 750px at 55% 100%, rgba(245,158,11,.13), transparent 65%),
@@ -69,7 +84,7 @@
         color: var(--text);
       }
       a { color: inherit; }
-      .container { width: min(1120px, 100%); margin: 0 auto; padding: 0 18px; }
+      .container { width: min(1180px, 100%); margin: 0 auto; padding: 0 clamp(14px, 4vw, 24px); }
 
       .nav {
         position: sticky;
@@ -83,15 +98,19 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 14px 0;
-        gap: 12px;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        padding: 12px 0;
+        gap: 10px 12px;
       }
       .brand {
         display: flex;
         align-items: center;
         gap: 10px;
+        font-family: var(--font-display);
         font-weight: 700;
-        letter-spacing: .2px;
+        letter-spacing: -0.01em;
+        font-size: 15px;
       }
       .logo-img {
         width: 38px;
@@ -117,9 +136,31 @@
       }
       .links {
         display: flex;
-        gap: 14px;
-        flex-wrap: wrap;
+        gap: 6px;
+        flex-wrap: nowrap;
         justify-content: flex-end;
+        align-items: center;
+        flex: 1 1 200px;
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        padding: 2px 0;
+      }
+      .links::-webkit-scrollbar { display: none; }
+      @media (max-width: 720px) {
+        .brand { order: 1; }
+        .lang { order: 2; margin-left: auto; }
+        .links {
+          order: 3;
+          flex: 1 1 100%;
+          justify-content: flex-start;
+          padding-top: 8px;
+          margin-top: 2px;
+          border-top: 1px solid rgba(15,23,42,.07);
+        }
       }
       .links a {
         font-size: 13px;
@@ -160,20 +201,21 @@
 
       .hero {
         position: relative;
-        padding: 36px 0 42px;
+        padding: clamp(24px, 4vw, 36px) 0 clamp(30px, 5vw, 42px);
         overflow: hidden;
       }
       .banner-strip {
-        padding: 18px 0 0;
+        padding: clamp(14px, 3vw, 20px) 0 0;
       }
       .banner-img {
         width: 100%;
-        height: 360px;
+        height: clamp(200px, 32vw, 380px);
+        max-height: 420px;
         object-fit: cover;
         display: block;
       }
       @media (max-width: 900px) {
-        .banner-img { height: 240px; }
+        .banner-img { max-height: 280px; }
       }
       .hero::before {
         content: "";
@@ -206,16 +248,18 @@
       .card {
         border: 1px solid var(--line);
         background: var(--panel);
-        border-radius: 18px;
+        border-radius: var(--radius-lg);
         box-shadow: var(--shadow);
       }
       .hero-main {
-        padding: 28px 22px;
+        padding: clamp(20px, 4vw, 28px) clamp(18px, 3vw, 24px);
       }
       h1 {
         margin: 0 0 12px;
-        font-size: clamp(34px, 5vw, 60px);
-        line-height: 1.02;
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: clamp(30px, 4.8vw, 56px);
+        line-height: 1.06;
         letter-spacing: -0.03em;
       }
       .lead {
@@ -229,6 +273,12 @@
         display: flex;
         gap: 12px;
         flex-wrap: wrap;
+      }
+      @media (max-width: 400px) {
+        .cta-row .btn {
+          flex: 1 1 100%;
+          justify-content: center;
+        }
       }
       .btn {
         display: inline-flex;
@@ -288,24 +338,39 @@
       .pill strong { color: var(--text); }
 
       section {
-        padding: 38px 0;
+        padding: var(--section-y) 0;
       }
       .section-title {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        gap: 12px;
-        margin-bottom: 16px;
+        gap: 12px 16px;
+        margin-bottom: clamp(14px, 2.5vw, 20px);
+        flex-wrap: wrap;
+      }
+      @media (max-width: 640px) {
+        .section-title {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .section-title .hint {
+          max-width: 100%;
+        }
       }
       h2 {
         margin: 0;
-        font-size: 24px;
-        letter-spacing: -0.01em;
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: clamp(21px, 2.5vw, 26px);
+        letter-spacing: -0.02em;
+        line-height: 1.2;
       }
       .hint {
         margin: 0;
         color: var(--muted);
         font-size: 13px;
+        line-height: 1.5;
+        max-width: min(52ch, 100%);
       }
       .grid3 {
         display: grid;
@@ -320,7 +385,10 @@
       }
       .feature h3 {
         margin: 0 0 6px;
+        font-family: var(--font-display);
         font-size: 16px;
+        font-weight: 650;
+        letter-spacing: -0.015em;
       }
       .feature p {
         margin: 0;
@@ -332,7 +400,7 @@
       .gallery {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 10px;
+        gap: clamp(8px, 1.5vw, 12px);
       }
       @media (max-width: 1020px) {
         .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -359,12 +427,16 @@
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        gap: 12px;
+        gap: 10px 12px;
         margin: 4px 0 10px;
+        flex-wrap: wrap;
       }
       .group-head h3 {
         margin: 0;
+        font-family: var(--font-display);
         font-size: 16px;
+        font-weight: 650;
+        letter-spacing: -0.015em;
       }
       .wechat-qr {
         margin-top: 12px;
@@ -378,7 +450,7 @@
       }
       .g img {
         width: 100%;
-        height: 180px;
+        height: clamp(140px, 22vw, 200px);
         object-fit: cover;
         display: block;
       }
@@ -426,8 +498,8 @@
 
       .whatsapp-fab {
         position: fixed;
-        right: 18px;
-        bottom: 18px;
+        right: max(14px, env(safe-area-inset-right, 0px));
+        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
         z-index: 80;
         display: inline-flex;
         align-items: center;
@@ -682,7 +754,6 @@
     <footer>
       <div class="container">
         <span data-i18n="footer.copyright">© 广州哆啦游乐设备有限公司。保留所有权利。</span>
-        <span style="opacity:.7;" data-i18n="footer.generated">由 Python 生成。</span>
       </div>
     </footer>
     <script>
@@ -754,7 +825,7 @@
               wechatHint: "微信扫码添加：13802780239",
               note: "提示：如需更详细的项目清单与配置建议，请发送场地尺寸与目标预算区间。"
             },
-            footer: { copyright: "© 广州哆啦游乐设备有限公司。保留所有权利。", generated: "由 Python 生成。" },
+            footer: { copyright: "© 广州哆啦游乐设备有限公司。保留所有权利。" },
             meta: {
               title: "广州哆啦游乐设备有限公司｜室内儿童乐园整体解决方案",
               description: "广州哆啦游乐设备有限公司提供室内儿童乐园整体解决方案：方案设计、主题定制、生产供货与交付支持。",
@@ -831,7 +902,7 @@
               wechatHint: "Scan to add WeChat: 13802780239",
               note: "Tip: Share your target budget range to receive a more precise configuration suggestion."
             },
-            footer: { copyright: "© Guangzhou Duola Amusement Equipment Co., Ltd.. All rights reserved.", generated: "Generated by Python." },
+            footer: { copyright: "© Guangzhou Duola Amusement Equipment Co., Ltd.. All rights reserved." },
             meta: {
               title: "Duora Amusement | Indoor Playground Solutions",
               description: "Duora Amusement provides turnkey indoor playground solutions: concept design, themed customization, equipment supply and delivery support.",
@@ -908,7 +979,7 @@
               wechatHint: "Escanea para agregar WeChat: 13802780239",
               note: "Consejo: comparte el presupuesto objetivo para una recomendación más precisa."
             },
-            footer: { copyright: "© Guangzhou Duola Amusement Equipment Co., Ltd.. Todos los derechos reservados.", generated: "Generado por Python." },
+            footer: { copyright: "© Guangzhou Duola Amusement Equipment Co., Ltd.. Todos los derechos reservados." },
             meta: {
               title: "Duora Amusement | Soluciones de parques infantiles indoor",
               description: "Duora Amusement ofrece soluciones integrales para parques infantiles indoor: diseño, tematización, suministro de equipos y soporte de entrega.",
@@ -985,7 +1056,7 @@
               wechatHint: "Сканируйте QR для WeChat: 13802780239",
               note: "Совет: укажите целевой бюджет, чтобы мы точнее предложили комплектацию."
             },
-            footer: { copyright: "© Guangzhou Duola Amusement Equipment Co., Ltd.. Все права защищены.", generated: "Сгенерировано Python." },
+            footer: { copyright: "© Guangzhou Duola Amusement Equipment Co., Ltd.. Все права защищены." },
             meta: {
               title: "Duora Amusement | Решения для детских игровых комнат",
               description: "Duora Amusement предлагает комплексные решения для indoor-парков: дизайн, тематизация, поставка оборудования и поддержка поставки.",
